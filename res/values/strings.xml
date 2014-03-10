@@ -3,6 +3,12 @@
 
     <string name="app_name">KodeTilKunde</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    
+    
+    <string name="button_test">test</string>
+    <string name="button_horizontalSpacing">horizontal</string>
+    <string name="button_verticalSpacing">vertical</string>
+    <string name="button_longTest">not fit in previous line</string>
+    <string name="button_newLine">break line</string>
 
 </resources>

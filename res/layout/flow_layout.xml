@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.apmem.tools.layouts.FlowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:f="http://schemas.android.com/apk/res/com.example.kodetilkunde"
+    android:id="@+id/flowLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    f:horizontalSpacing="6dip"
+    f:orientation="horizontal"
+    f:verticalSpacing="12dip" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        f:layout_newLine="true"
+        android:textSize="40sp" />
+
+</org.apmem.tools.layouts.FlowLayout>
