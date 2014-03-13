@@ -6,6 +6,7 @@ import java.util.List;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +15,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import org.apmem.tools.layouts.*;
+
+import com.example.model.Bricks;
+import com.example.sqlite.Database;
 
 public class MainActivity extends Activity {
 
@@ -37,6 +41,28 @@ public class MainActivity extends Activity {
 		category.add("Tekniske installationer");
 		category.add("Industrialisering");
 		
+		Database db = new Database(this);
+		
+		 /**
+         * Inserting
+         * */
+        // Inserting Contacts
+        Log.d("Insert: ", "Inserting ..");
+        db.createBricks(new Bricks (1, "Æstetik" , "lilla"));
+        db.createBricks(new Bricks (2, "Privat" , "lilla"));
+        db.createBricks(new Bricks (3, "Inspiration" , "lilla"));
+        db.createBricks(new Bricks (4, "Skygge" , "lilla"));
+        db.createBricks(new Bricks (5, "Historie" , "lilla"));
+        db.createBricks(new Bricks (6, "Støj" , "lilla"));
+ 
+        // Reading all contacts
+        Log.d("Reading: ", "Reading all contacts..");
+        List<Bricks> bri = db.getAllBricks();     
+ 
+        for (Bricks bn : bri) {
+            String log = "Id: "+bn.getId()+" ,Name: " + bn.getName() + " ,Colour: " + bn.getColour();
+                // Writing Contacts to log
+        Log.d("Name: ", log);
 		
 		// Create 8 categories.
 		for (String c : category) {
@@ -59,6 +85,7 @@ public class MainActivity extends Activity {
 			// Add the FlowLayout to the container.
 			container.addView(fl);
 		}
+       }
 
 	}
 
