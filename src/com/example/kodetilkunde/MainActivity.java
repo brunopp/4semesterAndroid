@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
 			for (int j = 0; j < 10; j++) {
 				Button b = new Button(this);
 
-				b.setText(j);
+				b.setText(""+j);
 				
 				fl.addView(b);
 			
