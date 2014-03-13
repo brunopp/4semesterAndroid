@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 		category.add("Stedet");
 		category.add("Brugere/Funktion");
 		category.add("Stabilitet");
-		category.add("Økonomi");
+		category.add("Ã˜konomi");
 		category.add("Energidesign");
 		category.add("Tekniske installationer");
 		category.add("Industrialisering");
