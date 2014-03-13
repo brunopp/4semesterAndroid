@@ -46,4 +46,10 @@ public class Bricks {
 	public void setColour(String colour) {
 		this.colour = colour;
 	}
+	
+	@Override
+	public String toString()
+	{
+		return this.name;
+	}
 }

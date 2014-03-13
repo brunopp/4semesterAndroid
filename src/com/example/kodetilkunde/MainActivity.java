@@ -17,6 +17,7 @@ import android.widget.TextView;
 import org.apmem.tools.layouts.*;
 
 import com.example.model.Bricks;
+import com.example.model.Category;
 import com.example.sqlite.Database;
 
 public class MainActivity extends Activity {
@@ -36,7 +37,7 @@ public class MainActivity extends Activity {
 		category.add("Stedet");
 		category.add("Brugere/Funktion");
 		category.add("Stabilitet");
-		category.add("�konomi");
+		category.add("Økonomi");
 		category.add("Energidesign");
 		category.add("Tekniske installationer");
 		category.add("Industrialisering");
@@ -46,17 +47,27 @@ public class MainActivity extends Activity {
 		 /**
          * Inserting
          * */
-        // Inserting Contacts
+        // Inserting Bricks
         Log.d("Insert: ", "Inserting ..");
-        db.createBricks(new Bricks (1, "�stetik" , "lilla"));
+        db.createBricks(new Bricks (1, "Æstetik" , "lilla"));
         db.createBricks(new Bricks (2, "Privat" , "lilla"));
         db.createBricks(new Bricks (3, "Inspiration" , "lilla"));
         db.createBricks(new Bricks (4, "Skygge" , "lilla"));
         db.createBricks(new Bricks (5, "Historie" , "lilla"));
-        db.createBricks(new Bricks (6, "St�j" , "lilla"));
- 
+        db.createBricks(new Bricks (6, "Støj" , "lilla"));
+        
+        // insertings Categories
+        db.createCategory(new Category (1, "Arkitektur" , "Hvid"));
+        db.createCategory(new Category (2, "Brugere/Funktion" , "Sand"));
+        db.createCategory(new Category (3, "Industralisering" , "Lyserblå"));
+        db.createCategory(new Category (4, "Energidesign" , "MørkSort"));
+        db.createCategory(new Category (5, "Økonomi" , "Mørkebrun"));
+        db.createCategory(new Category (6, "Stabilitet" , "Brun"));
+        db.createCategory(new Category (7, "Stedet" , "Lysergrå"));
+        db.createCategory(new Category (8, "Tekniske installioner" , "grå"));
+        
         // Reading all contacts
-        Log.d("Reading: ", "Reading all contacts..");
+        Log.d("Reading: ", "Reading all Bricks..");
         List<Bricks> bri = db.getAllBricks();     
  
         for (Bricks bn : bri) {
