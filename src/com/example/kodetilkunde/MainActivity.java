@@ -56,38 +56,17 @@ public class MainActivity extends Activity {
 			// Add 10 buttons to the FlowLayout.
 			for (int j = 0; j < 10; j++) {
 				Button b = new Button(this);
-				b.setText("BUTTON" + j);
+				b.setText(j);
 				
 				fl.addView(b);
 			
+			}
 			// Add the FlowLayout to the container.
 			container.addView(fl);
-			}
 		}
 		
 	}
 		
-//		// Create 8 categories
-//		for (int i = 0; i < 8; i++) {
-//			// Inflate the FlowLayout (=create a flowlayout from an XML file).
-//			FlowLayout fl = (FlowLayout) View.inflate(this, R.layout.flow_layout, null);
-//			// Find the TextView in the FlowLayout.
-//			TextView tv = (TextView) fl.findViewById(R.id.textView);
-//			tv.setText("KATEGORI" + i);
-			
-			
-			// Add 10 buttons to the FlowLayout.
-//			for (int j = 0; j < 10; j++) {
-//				Button b = new Button(this);
-//				b.setText("BUTTON" + j);
-//				
-//				fl.addView(b);
-//			}
-			
-			// Add the FlowLayout to the container.
-//			container.addView(fl);
-//		}
-//	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
