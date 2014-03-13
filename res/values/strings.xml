@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">KodeTilKunde</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_add">Add</string>
     
     
     <string name="button_test">test</string>
