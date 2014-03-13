@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SelectCategoryActivity" >
+
+    <TextView
+        android:id="@+id/stedet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arkitektur"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:clickable="true"
+        android:text="Stedet"
+        android:textSize="28sp"
+        android:onClick="" />
+
+    <TextView
+        android:id="@+id/brugerefunktioner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stedet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Brugere/Funktion"
+        android:textSize="28sp" 
+        android:onClick=""
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/stabilitet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brugerefunktioner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Stabilitet"
+        android:textSize="28sp" 
+        android:onClick=""
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/oekonomi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stabilitet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Økonomi"
+        android:textSize="28sp" 
+        android:onClick=""
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/energidesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oekonomi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Energidesign"
+        android:textSize="28sp" 
+        android:onClick=""
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/tekinstallationer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/energidesign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:clickable="true"
+        android:text="Tekniske Installationer"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/industrialisering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tekinstallationer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Industrialisering"
+        android:textSize="30sp" 
+        android:onClick=""
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/arkitektur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:text="Arkitektur"
+        android:textSize="28sp" />
+
+</RelativeLayout>
