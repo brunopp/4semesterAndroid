@@ -5,9 +5,13 @@ import java.util.List;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -24,17 +28,16 @@ public class SelectBrickActivity extends Activity {
 		l.add("B2");
 		l.add("B3");
 		
-		ArrayAdapter<String> aa = new ArrayAdapter<String>(this, R.id.listViewBricks, android.R.layout.simple_list_item_1, l);
-		
 		ListView lv = (ListView) findViewById(R.id.listViewBricks);
+		ArrayAdapter<String> aa = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, l);
 		lv.setAdapter(aa);
 		
-		final Toast t = Toast.makeText(this, "onPause", Toast.LENGTH_SHORT);
-		lv.setOnClickListener(new OnClickListener() {
-			
+		final Context c = this;
+		lv.setOnItemClickListener(new OnItemClickListener() {
+ 
 			@Override
-			public void onClick(View v) {
-				t.show();
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+				//Intent i = new Intent(c);
 			}
 		});
 	}
