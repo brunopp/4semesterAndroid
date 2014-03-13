@@ -37,7 +37,9 @@ public class SelectBrickActivity extends Activity {
  
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-				//Intent i = new Intent(c);
+				Intent i = new Intent(c, SelectCategoryActivity.class);
+				i.putExtra("brickId", -1);
+				startActivity(i);
 			}
 		});
 	}

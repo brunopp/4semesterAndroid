@@ -35,8 +35,9 @@ public class MainActivity extends Activity {
 		category.add("Økonomi");
 		category.add("Energidesign");
 		category.add("Tekniske installationer");
-		category.add("industrialisering");
-
+		category.add("Industrialisering");
+		
+		
 		// Create 8 categories.
 		for (String c : category) {
 			// Inflate the FlowLayout (=create a flowlayout from an XML file).

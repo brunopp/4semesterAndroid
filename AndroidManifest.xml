@@ -22,10 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.kodetilkunde.SelectBrickActivity"
-            android:label="@string/title_activity_select_brick" >
-        </activity>
+        <activity android:name="com.example.kodetilkunde.SelectBrickActivity"
+            android:label="@string/title_activity_select_brick" />
+           <activity 
+            android:name="com.example.kodetilkunde.SelectCategoryActivity"
+            android:label="@string/title_activity_select_category" />
     </application>
 
 </manifest>
