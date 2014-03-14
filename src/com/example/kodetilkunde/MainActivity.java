@@ -32,6 +32,7 @@ public class MainActivity extends Activity {
 
 		// ArrayList of categories
 		List<String> category = new ArrayList<String>();
+		
 		// Add categories
 		category.add("Arkitekur");
 		category.add("Stedet");
@@ -68,14 +69,13 @@ public class MainActivity extends Activity {
         db.createCategory(new Category (8, "Tekniske installioner" , "grå"));
         
 
-        // Reading all contacts
-        Log.d("Reading: ", "Reading all contacts..");
+        // Reading all Bricks
         Log.d("Reading: ", "Reading all Bricks..");
         List<Bricks> bri = db.getAllBricks();     
  
         for (Bricks bn : bri) {
             String log = "Id: "+bn.getId()+" ,Name: " + bn.getName() + " ,Colour: " + bn.getColour();
-                // Writing Contacts to log
+                // Writing Bricks to log
         Log.d("Name: ", log);
 		
 		// Create 8 categories.
