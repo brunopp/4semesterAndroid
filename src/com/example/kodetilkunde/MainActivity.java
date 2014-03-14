@@ -55,6 +55,7 @@ public class MainActivity extends Activity {
         db.createBricks(new Bricks (4, "Skygge" , "lilla"));
         db.createBricks(new Bricks (5, "Historie" , "lilla"));
         db.createBricks(new Bricks (6, "Støj" , "lilla"));
+
         
         // insertings Categories
         db.createCategory(new Category (1, "Arkitektur" , "Hvid"));
@@ -66,7 +67,9 @@ public class MainActivity extends Activity {
         db.createCategory(new Category (7, "Stedet" , "Lysergrå"));
         db.createCategory(new Category (8, "Tekniske installioner" , "grå"));
         
+
         // Reading all contacts
+        Log.d("Reading: ", "Reading all contacts..");
         Log.d("Reading: ", "Reading all Bricks..");
         List<Bricks> bri = db.getAllBricks();     
  
