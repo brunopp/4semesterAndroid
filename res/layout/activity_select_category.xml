@@ -8,100 +8,96 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".SelectCategoryActivity" >
 
-    <TextView
-        android:id="@+id/stedet"
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/arkitektur"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:clickable="true"
-        android:text="Stedet"
-        android:textSize="40sp"
-        android:onClick="setBrickToCat" />
+        android:layout_height="wrap_content" >
 
-    <TextView
-        android:id="@+id/brugerefunktioner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/stedet"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="Brugere/Funktion"
-        android:textSize="40sp" 
-        android:onClick="setBrickToCat"
-        android:clickable="true" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/stabilitet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/brugerefunktioner"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="Stabilitet"
-        android:textSize="40sp" 
-        android:onClick="setBrickToCat"
-        android:clickable="true" />
+            <TextView
+                android:id="@+id/stedet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="setBrickToCat"
+                android:text="Stedet"
+                android:textSize="40sp" />
 
-    <TextView
-        android:id="@+id/oekonomi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/stabilitet"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="Økonomi"
-        android:textSize="40sp" 
-        android:onClick="setBrickToCat"
-        android:clickable="true" />
+            <TextView
+                android:id="@+id/brugerefunktioner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:onClick="setBrickToCat"
+                android:text="Brugere/Funktion"
+                android:textSize="40sp" />
 
-    <TextView
-        android:id="@+id/energidesign"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/oekonomi"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="Energidesign"
-        android:textSize="40sp" 
-        android:onClick="setBrickToCat"
-        android:clickable="true" />
+            <TextView
+                android:id="@+id/stabilitet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:onClick="setBrickToCat"
+                android:text="Stabilitet"
+                android:textSize="40sp" />
 
-    <TextView
-        android:id="@+id/tekinstallationer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/energidesign"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:clickable="true"
-        android:onClick="setBrickToCat"
-        android:text="Tekniske Installationer"
-        android:textSize="40sp" />
+            <TextView
+                android:id="@+id/oekonomi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:onClick="setBrickToCat"
+                android:text="Økonomi"
+                android:textSize="40sp" />
 
-    <TextView
-        android:id="@+id/industrialisering"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tekinstallationer"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:clickable="true"
-        android:onClick="setBrickToCat"
-        android:text="Industrialisering"
-        android:textSize="40sp" />
+            <TextView
+                android:id="@+id/energidesign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/oekonomi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:onClick="setBrickToCat"
+                android:text="Energidesign"
+                android:textSize="40sp" />
 
-    <TextView
-        android:id="@+id/arkitektur"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:clickable="true"
-        android:onClick="setBrickToCat"
-        android:text="Arkitektur"
-        android:textSize="40sp" />
+            <TextView
+                android:id="@+id/tekinstallationer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:onClick="setBrickToCat"
+                android:text="Tekniske Installationer"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/industrialisering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:onClick="setBrickToCat"
+                android:text="Industrialisering"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/arkitektur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:onClick="setBrickToCat"
+                android:text="Arkitektur"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
