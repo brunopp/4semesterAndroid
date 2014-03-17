@@ -17,7 +17,7 @@ public class Database extends  SQLiteOpenHelper {
 	
 	// All Static variables
 	// Database Version
-	private static final int DATABASE_VERSION = 2;
+	private static final int DATABASE_VERSION = 3;
 	
 	// Database Name
 	private static final String DATABASE_NAME = "ConceptManager";
@@ -211,6 +211,34 @@ public class Database extends  SQLiteOpenHelper {
 			// return contact list
 			return BricksList;
 		}
+		
+		// Get all bricks by name
+		
+		public List<Bricks> getAllBricksByName(String name) {
+			List<Bricks> brickList = new ArrayList<Bricks>();
+
+			// get selected query
+			String selectQuery = "SELECT * FROM bricks WHERE name like '%" + name + "%'";
+
+			SQLiteDatabase db = this.getWritableDatabase();
+			Cursor cursor = db.rawQuery(selectQuery, null);
+
+			// loop through all rows and add
+			if (cursor.moveToFirst()) {
+				do {
+					Bricks brick = new Bricks();
+					brick.setId(Integer.parseInt(cursor.getString(0)));
+					brick.setName(cursor.getString(1));
+					brick.setColour(cursor.getString(2));
+					// tilf�jer Opskrift til listen
+					brickList.add(brick);
+				} while (cursor.moveToNext());
+			}
+			// close db
+			db.close();
+			// return the bricklist
+			return brickList;
+		}
 
 		// ------------------------ "SelectedBricks" table methods ----------------//
 	
@@ -225,5 +253,6 @@ public class Database extends  SQLiteOpenHelper {
 
 			return id;
 		}
+
 		
 }

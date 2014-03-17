@@ -2,9 +2,9 @@ package com.example.kodetilkunde;
 
 import java.util.List;
 
-
 import com.example.model.Bricks;
 import com.example.sqlite.Database;
+
 
 import android.os.Bundle;
 import android.annotation.SuppressLint;
@@ -14,11 +14,14 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 
 public class SelectBrickActivity extends Activity implements OnItemClickListener {
 	
 	//fields
+	
+	EditText edittext;
 	
 	
 	ListView listview;
@@ -56,6 +59,8 @@ public class SelectBrickActivity extends Activity implements OnItemClickListener
 
 			// tilf�jer data adapter til listview
 			listview.setAdapter(dataAdapter);
+			
+			edittext = (EditText)findViewById(R.id.editTextSearch);
 		}
 		
 		// listview click
@@ -72,6 +77,31 @@ public class SelectBrickActivity extends Activity implements OnItemClickListener
     		startActivity(intent);  
     		finish();
     		
+        }
+        
+        public void ButtonSearch(View v)
+        {
+			String name;
+			
+			// set name 
+			
+			name = edittext.getText().toString();
+			
+			// database handler
+			Database db = new Database(getApplicationContext());
+
+			// listview Drop down elements
+			List<Bricks> allBricks = db.getAllBricksByName(name);
+
+			// Opretter adapter for listview
+			ArrayAdapter<Bricks> dataAdapter = new ArrayAdapter<Bricks>(this,
+					android.R.layout.simple_list_item_1, allBricks);
+
+			// Drop down layout - listview med radio button
+			dataAdapter.setDropDownViewResource(android.R.layout.simple_list_item_1);
+
+			// tilf�jer data adapter til listview
+			listview.setAdapter(dataAdapter);
         }
 
 	
