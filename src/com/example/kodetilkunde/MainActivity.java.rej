@@ -1,9 +1,0 @@
-diff a/src/com/example/kodetilkunde/MainActivity.java b/src/com/example/kodetilkunde/MainActivity.java	(rejected hunks)
-@@ -37,7 +37,6 @@
- 		category.add("Stedet");
- 		category.add("Brugere/Funktion");
- 		category.add("Stabilitet");
--		category.add("�konomi");
- 		category.add("Økonomi");
- 		category.add("Energidesign");
- 		category.add("Tekniske installationer");
