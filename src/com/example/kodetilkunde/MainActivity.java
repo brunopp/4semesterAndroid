@@ -23,8 +23,8 @@ import com.example.sqlite.Database.Pair;
 
 public class MainActivity extends Activity {
 
-	private List<Category> category;
-	private List<Bricks> bricks;
+	private ArrayList<Category> category;
+	private ArrayList<Bricks> bricks;
 
 
 	@Override
@@ -451,13 +451,13 @@ public class MainActivity extends Activity {
 			Log.d("Name: ", log);
 		}
 		// Create 8 categories.
-		for (Category c : category) {
+		for (int i = 0; i < category.size(); i++) {
 			// Inflate the FlowLayout (=create a flowlayout from an XML file).
 			FlowLayout fl = (FlowLayout) View.inflate(this,
 					R.layout.flow_layout, null);
 			// Find the TextView in the FlowLayout.
 			TextView tv = (TextView) fl.findViewById(R.id.textView);
-			tv.setText(c.getName().toString());
+			tv.setText(category.get(i).getName().toString());
 
 			// Add 10 buttons to the FlowLayout.
 			for (Bricks br : bricks) {

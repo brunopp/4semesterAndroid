@@ -258,8 +258,8 @@ public class Database extends  SQLiteOpenHelper {
 		public Pair startPage()
 		{
 			
-			List<Category> resp = new ArrayList<Category>();
-			List<Bricks> brickResp = new ArrayList<Bricks>();
+			ArrayList<Category> resp = new ArrayList<Category>();
+			ArrayList<Bricks> brickResp = new ArrayList<Bricks>();
 			int katId;
 			int briId;
 			String query = "select * from selectedbricks";
@@ -291,16 +291,16 @@ public class Database extends  SQLiteOpenHelper {
 		
 		public class Pair
 		{
-		    private List<Category> array1;
-		    private List<Bricks> array2;
-		    public Pair(List<Category> array1, List<Bricks> array2)
+		    private ArrayList<Category> array1;
+		    private ArrayList<Bricks> array2;
+		    public Pair(ArrayList<Category> array1, ArrayList<Bricks> array2)
 		    {
 		        this.array1 = array1;
 		        this.array2 = array2;
 
 		    }
-		    public List<Category> getArray1() { return array1; }
-		    public List<Bricks> getArray2() { return array2; }
+		    public ArrayList<Category> getArray1() { return array1; }
+		    public ArrayList<Bricks> getArray2() { return array2; }
 		}
 		
 		
