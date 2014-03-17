@@ -24,6 +24,7 @@ import com.example.sqlite.Database.Pair;
 public class MainActivity extends Activity {
 
 	private List<Category> category;
+	private List<Bricks> bricks;
 
 
 	@Override
@@ -38,6 +39,7 @@ public class MainActivity extends Activity {
 		try {
 			Pair p = db.startPage();
 			category = p.getArray1();
+			bricks = p.getArray2();
 			
 			if (category.size() == 0) 
 			{
@@ -50,6 +52,11 @@ public class MainActivity extends Activity {
 				category.add(new Category(6, "Energidesign", "Blabla"));
 				category.add(new Category(7, "Tekniske installationer", "Blabla"));
 				category.add(new Category(8, "Industrialisering", "Blabla"));
+			}
+			if(bricks.size() == 0)
+			{
+				bricks.clear();
+				bricks.add(new Bricks(999, "No Bricks Added", "green"));
 			}
 		} 
 		
@@ -453,10 +460,10 @@ public class MainActivity extends Activity {
 			tv.setText(c.getName().toString());
 
 			// Add 10 buttons to the FlowLayout.
-			for (int j = 0; j < 10; j++) {
+			for (Bricks br : bricks) {
 				Button b = new Button(this);
 
-				b.setText("" + j);
+				b.setText(br.getName());
 
 				fl.addView(b);
 
