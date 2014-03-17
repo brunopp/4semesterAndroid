@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 
 		// ArrayList of categories
 		List<String> category = new ArrayList<String>();
-		
+
 		// Add categories
 		category.add("Arkitekur");
 		category.add("Stedet");
@@ -42,9 +42,8 @@ public class MainActivity extends Activity {
 		category.add("Energidesign");
 		category.add("Tekniske installationer");
 		category.add("Industrialisering");
-		
-		Database db = new Database(this);
-		
+
+		Database db = new Database(this);		
 		 /**
          * Inserting
          * */
@@ -423,19 +422,21 @@ public class MainActivity extends Activity {
         db.createCategory(new Category (8, "Tekniske installioner" , "grå"));
         
 
-        // Reading all Bricks
-        Log.d("Reading: ", "Reading all Bricks..");
-        List<Bricks> bri = db.getAllBricks();     
- 
-        for (Bricks bn : bri) {
-            String log = "Id: "+bn.getId()+" ,Name: " + bn.getName() + " ,Colour: " + bn.getColour();
-                // Writing Bricks to log
-        Log.d("Name: ", log);
-		
+		// Reading all Bricks
+		Log.d("Reading: ", "Reading all Bricks..");
+		List<Bricks> bri = db.getAllBricks();
+
+		for (Bricks bn : bri) {
+			String log = "Id: " + bn.getId() + " ,Name: " + bn.getName()
+					+ " ,Colour: " + bn.getColour();
+			// Writing Bricks to log
+			Log.d("Name: ", log);
+		}
 		// Create 8 categories.
 		for (String c : category) {
 			// Inflate the FlowLayout (=create a flowlayout from an XML file).
-			FlowLayout fl = (FlowLayout) View.inflate(this, R.layout.flow_layout, null);
+			FlowLayout fl = (FlowLayout) View.inflate(this,
+					R.layout.flow_layout, null);
 			// Find the TextView in the FlowLayout.
 			TextView tv = (TextView) fl.findViewById(R.id.textView);
 			tv.setText(c);
@@ -444,19 +445,16 @@ public class MainActivity extends Activity {
 			for (int j = 0; j < 10; j++) {
 				Button b = new Button(this);
 
-				b.setText(""+j);
-				
+				b.setText("" + j);
+
 				fl.addView(b);
-			
+
 			}
 
 			// Add the FlowLayout to the container.
 			container.addView(fl);
 		}
-       }
-
 	}
-
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -466,8 +464,7 @@ public class MainActivity extends Activity {
 	}
 
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item)
-	{
+	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.action_add:
 			startSelectBrickActivity();
@@ -475,12 +472,11 @@ public class MainActivity extends Activity {
 		default:
 			break;
 		}
-		
+
 		return super.onOptionsItemSelected(item);
 	}
-	
-	private void startSelectBrickActivity()
-	{
+
+	private void startSelectBrickActivity() {
 		Intent i = new Intent(this, SelectBrickActivity.class);
 		startActivity(i);
 	}
