@@ -75,6 +75,7 @@ public class SelectCategoryActivity extends Activity {
 		try 
 		{
 			db.createSelectedBricks(catId, brickId);
+			finish();
 		} 
 		catch (Exception e) 
 		{
