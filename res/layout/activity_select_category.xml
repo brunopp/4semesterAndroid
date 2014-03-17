@@ -14,11 +14,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/arkitektur"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="30dp"
         android:clickable="true"
         android:text="Stedet"
-        android:textSize="28sp"
-        android:onClick="" />
+        android:textSize="40sp"
+        android:onClick="setBrickToCat" />
 
     <TextView
         android:id="@+id/brugerefunktioner"
@@ -26,10 +26,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/stedet"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="30dp"
         android:text="Brugere/Funktion"
-        android:textSize="28sp" 
-        android:onClick=""
+        android:textSize="40sp" 
+        android:onClick="setBrickToCat"
         android:clickable="true" />
 
     <TextView
@@ -38,10 +38,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/brugerefunktioner"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="30dp"
         android:text="Stabilitet"
-        android:textSize="28sp" 
-        android:onClick=""
+        android:textSize="40sp" 
+        android:onClick="setBrickToCat"
         android:clickable="true" />
 
     <TextView
@@ -50,10 +50,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/stabilitet"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="30dp"
         android:text="Økonomi"
-        android:textSize="28sp" 
-        android:onClick=""
+        android:textSize="40sp" 
+        android:onClick="setBrickToCat"
         android:clickable="true" />
 
     <TextView
@@ -62,10 +62,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/oekonomi"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="30dp"
         android:text="Energidesign"
-        android:textSize="28sp" 
-        android:onClick=""
+        android:textSize="40sp" 
+        android:onClick="setBrickToCat"
         android:clickable="true" />
 
     <TextView
@@ -74,10 +74,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/energidesign"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="30dp"
         android:clickable="true"
+        android:onClick="setBrickToCat"
         android:text="Tekniske Installationer"
-        android:textSize="28sp" />
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/industrialisering"
@@ -85,11 +86,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tekinstallationer"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:onClick="setBrickToCat"
         android:text="Industrialisering"
-        android:textSize="30sp" 
-        android:onClick=""
-        android:clickable="true" />
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/arkitektur"
@@ -97,9 +98,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="16dp"
         android:clickable="true"
+        android:onClick="setBrickToCat"
         android:text="Arkitektur"
-        android:textSize="28sp" />
+        android:textSize="40sp" />
 
 </RelativeLayout>

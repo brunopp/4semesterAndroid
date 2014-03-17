@@ -163,9 +163,11 @@ public class MainActivity extends Activity {
 		 /**
          * Inserting
          * */
+        
         // Inserting Bricks
         Log.d("Insert: ", "Inserting Lilla Green...");
         
+
         db.createBricks(new Bricks (111, "Brand" , "8A9B0F"));	
         db.createBricks(new Bricks (112, "Adgangsforhold" , "8A9B0F"));	
         db.createBricks(new Bricks (113, "Problemanalyse" , "8A9B0F"));	
@@ -248,12 +250,13 @@ public class MainActivity extends Activity {
         
         
         
+
 		 /**
          * Inserting
          * */
         // Inserting Bricks
         Log.d("Insert: ", "Inserting Lilla Yellow...");
-        
+       
         db.createBricks(new Bricks (190, "+" , "F8CB00"));
         db.createBricks(new Bricks (191, "-" , "F8CB00"));
         db.createBricks(new Bricks (192, "=" , "F8CB00"));
@@ -286,6 +289,7 @@ public class MainActivity extends Activity {
          * */
         // Inserting Bricks
         Log.d("Insert: ", "Inserting Lilla Orange...");
+
         
         db.createBricks(new Bricks (215, "Kontor" , "E87F00"));
         db.createBricks(new Bricks (216, "Atrium" , "E87F00"));
