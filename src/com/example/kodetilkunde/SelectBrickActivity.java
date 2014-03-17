@@ -74,7 +74,8 @@ public class SelectBrickActivity extends Activity implements OnItemClickListener
     		intent.putExtra("brickId", b.getId());
 
 
-    		startActivity(intent);        	
+    		startActivity(intent);  
+    		finish();
     		
         }
 
