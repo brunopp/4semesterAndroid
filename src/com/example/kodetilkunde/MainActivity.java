@@ -24,7 +24,7 @@ import com.example.sqlite.Database.Pair;
 public class MainActivity extends Activity {
 
 	private List<Category> category;
-	private List<Bricks> bricks;
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
