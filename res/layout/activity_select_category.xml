@@ -18,7 +18,7 @@
         android:clickable="true"
         android:text="Stedet"
         android:textSize="28sp"
-        android:onClick="" />
+        android:onClick="setBrickToCat" />
 
     <TextView
         android:id="@+id/brugerefunktioner"
@@ -29,7 +29,7 @@
         android:layout_marginTop="18dp"
         android:text="Brugere/Funktion"
         android:textSize="28sp" 
-        android:onClick=""
+        android:onClick="setBrickToCat"
         android:clickable="true" />
 
     <TextView
@@ -41,7 +41,7 @@
         android:layout_marginTop="18dp"
         android:text="Stabilitet"
         android:textSize="28sp" 
-        android:onClick=""
+        android:onClick="setBrickToCat"
         android:clickable="true" />
 
     <TextView
@@ -53,7 +53,7 @@
         android:layout_marginTop="18dp"
         android:text="Økonomi"
         android:textSize="28sp" 
-        android:onClick=""
+        android:onClick="setBrickToCat"
         android:clickable="true" />
 
     <TextView
@@ -65,7 +65,7 @@
         android:layout_marginTop="18dp"
         android:text="Energidesign"
         android:textSize="28sp" 
-        android:onClick=""
+        android:onClick="setBrickToCat"
         android:clickable="true" />
 
     <TextView
@@ -75,6 +75,7 @@
         android:layout_below="@+id/energidesign"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
+        android:onClick="setBrickToCat"
         android:clickable="true"
         android:text="Tekniske Installationer"
         android:textSize="28sp" />
@@ -88,7 +89,7 @@
         android:layout_marginTop="18dp"
         android:text="Industrialisering"
         android:textSize="30sp" 
-        android:onClick=""
+        android:onClick="setBrickToCat"
         android:clickable="true" />
 
     <TextView
@@ -99,6 +100,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:clickable="true"
+        android:onClick="setBrickToCat"
         android:text="Arkitektur"
         android:textSize="28sp" />
 

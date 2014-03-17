@@ -72,7 +72,13 @@ public class SelectCategoryActivity extends Activity {
 		default:
 			throw new RuntimeException("Unknow button ID");
 		}
-		
-		db.createSelectedBricks(catId, brickId);
+		try 
+		{
+			db.createSelectedBricks(catId, brickId);
+		} 
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
 	}
 }

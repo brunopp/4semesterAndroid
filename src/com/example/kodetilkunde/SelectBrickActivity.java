@@ -71,9 +71,8 @@ public class SelectBrickActivity extends Activity implements OnItemClickListener
         	Bricks b = new Bricks();
     		b = (Bricks) parent.getItemAtPosition(position);
     		Intent intent = new Intent(this, SelectCategoryActivity.class);
-    		intent.putExtra(EXTRA_ID, b.getId());
-    		intent.putExtra(EXTRA_NAME, b.getName());
-    		intent.putExtra(EXTRA_COLOUR, b.getColour());
+    		intent.putExtra("brickId", b.getId());
+
 
     		startActivity(intent);        	
     		
