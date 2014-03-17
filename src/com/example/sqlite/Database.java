@@ -214,11 +214,10 @@ public class Database extends  SQLiteOpenHelper {
 
 		// ------------------------ "SelectedBricks" table methods ----------------//
 	
-		public long createSelectedBricks(SelectedBricks s, long c_id, long b_id) {
+		public long createSelectedBricks(long c_id, long b_id) {
 			SQLiteDatabase db = this.getWritableDatabase();
 
 			ContentValues values = new ContentValues();
-			values.put(SELECTEDBRICKS_ID, s.getId());
 			values.put(SELECTEDBRICKS_KID, c_id); 
 			values.put(SELECTEDBRICKS_BID, b_id);
 
