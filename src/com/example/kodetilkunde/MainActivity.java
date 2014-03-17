@@ -99,7 +99,6 @@ public class MainActivity extends Activity {
         db.createBricks(new Bricks (47, "Asymmetri" , "BD1550"));
         db.createBricks(new Bricks (48, "Larm" , "BD1550"));
         db.createBricks(new Bricks (49, "Lille" , "BD1550"));
-        db.createBricks(new Bricks (50, "Syd" , "BD1550"));
         db.createBricks(new Bricks (51, "Kontrast" , "BD1550"));
         db.createBricks(new Bricks (52, "Less is more" , "BD1550"));
         db.createBricks(new Bricks (53, "Perception" , "BD1550"));
@@ -159,13 +158,7 @@ public class MainActivity extends Activity {
         db.createBricks(new Bricks (107, "Orientering" , "BD1550"));
         db.createBricks(new Bricks (108, "ankomst" , "BD1550"));	
         db.createBricks(new Bricks (109, "geometri" , "BD1550"));
-        db.createBricks(new Bricks (110, "" , "BD1550"));	
-        db.createBricks(new Bricks (111, "" , "BD1550"));	
-        db.createBricks(new Bricks (112, "" , "BD1550"));
-        db.createBricks(new Bricks (113, "" , "BD1550"));	
-        db.createBricks(new Bricks (114, "" , "BD1550"));
-        db.createBricks(new Bricks (115, "" , "BD1550"));	
-
+        db.createBricks(new Bricks (110, "Syd" , "BD1550"));
         
 		 /**
          * Inserting
