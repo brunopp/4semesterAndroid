@@ -79,7 +79,7 @@ public class SelectBrickActivity extends Activity implements OnItemClickListener
     		
         }
         
-        public void ButtonSearch(View v)
+        public void buttonSearch(View v)
         {
 			String name;
 			
