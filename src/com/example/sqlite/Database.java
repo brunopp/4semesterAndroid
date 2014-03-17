@@ -7,6 +7,7 @@ import com.example.model.Bricks;
 import com.example.model.Category;
 import com.example.model.SelectedBricks;
 
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -170,7 +171,7 @@ public class Database extends  SQLiteOpenHelper {
 		/*
 		 * Getting a single Brick
 		 */
-		public Category getBrick(int id) {
+		public Bricks getBrick(int id) {
 			SQLiteDatabase db = this.getReadableDatabase();
 
 			Cursor cursor = db.query(TABLE_BRICKS, new String[] { BRICKS_ID,
@@ -179,7 +180,7 @@ public class Database extends  SQLiteOpenHelper {
 			if (cursor != null)
 				cursor.moveToFirst();
 
-			Category category = new Category(Integer.parseInt(cursor.getString(0)),
+			Bricks category = new Bricks(Integer.parseInt(cursor.getString(0)),
 					cursor.getString(1), cursor.getString(2));
 			// return Brick
 			return category;
@@ -253,6 +254,56 @@ public class Database extends  SQLiteOpenHelper {
 
 			return id;
 		}
+		
+		public Pair startPage()
+		{
+			
+			List<Category> resp = new ArrayList<Category>();
+			List<Bricks> brickResp = new ArrayList<Bricks>();
+			int katId;
+			int briId;
+			String query = "select * from selectedbricks";
+			
+			
+			SQLiteDatabase db = this.getWritableDatabase();
+			
+			Cursor cursor = db.rawQuery(query, null);
+
+			// loop through all rows and add
+			if (cursor.moveToFirst()) {
+				do {
+					katId = Integer.parseInt(cursor.getString(1));
+					briId = Integer.parseInt(cursor.getString(2));
+					
+					Category cat = getCategory(katId);
+					Bricks brick = getBrick(briId);
+					brickResp.add(brick);
+					resp.add(cat);
+					
+				} while (cursor.moveToNext());
+			}
+			// close db
+			db.close();
+			// return the bricklist
+			return new Pair(resp, brickResp);
+			
+		}
+		
+		public class Pair
+		{
+		    private List<Category> array1;
+		    private List<Bricks> array2;
+		    public Pair(List<Category> array1, List<Bricks> array2)
+		    {
+		        this.array1 = array1;
+		        this.array2 = array2;
+
+		    }
+		    public List<Category> getArray1() { return array1; }
+		    public List<Bricks> getArray2() { return array2; }
+		}
+		
+		
 
 		
 }
