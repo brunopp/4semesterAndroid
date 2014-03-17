@@ -24,6 +24,8 @@ import com.example.sqlite.Database.Pair;
 public class MainActivity extends Activity {
 
 	private List<Category> category;
+	private List<Bricks> bricks;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -33,28 +35,30 @@ public class MainActivity extends Activity {
 		LinearLayout container = (LinearLayout) findViewById(R.id.layoutContainer);
 
 		Database db = new Database(this);
-		try
-		{
+		try {
 			Pair p = db.startPage();
 			category = p.getArray1();
-		}
-		catch(Exception e)
+			
+			if (category.size() == 0) 
+			{
+				category.clear();
+				category.add(new Category(1, "Arkitekur", "Bla"));
+				category.add(new Category(2, "Stedet", "Bla"));
+				category.add(new Category(3, "Brugere/Funktion", "Bla"));
+				category.add(new Category(4, "Stabilitet", "BLabla"));
+				category.add(new Category(5, "Økonomi", "Blabla"));
+				category.add(new Category(6, "Energidesign", "Blabla"));
+				category.add(new Category(7, "Tekniske installationer", "Blabla"));
+				category.add(new Category(8, "Industrialisering", "Blabla"));
+			}
+		} 
+		
+		catch (Exception e) 
 		{
-			 // Add categories
-			 category.clear();
-			 category.add(new Category(1, "Arkitekur", "Bla"));
-			 category.add(new Category(2, "Stedet", "Bla"));
-			 category.add(new Category(3, "Brugere/Funktion", "Bla"));
-			 category.add(new Category(4, "Stabilitet", "BLabla"));
-			 category.add(new Category(5, "Økonomi", "Blabla"));
-			 category.add(new Category(6, "Energidesign", "Blabla"));
-			 category.add(new Category(7, "Tekniske installationer", "Blabla"));
-			 category.add(new Category(8, "Industrialisering", "Blabla"));
+			// Add categories
+
 		}
 		// ArrayList of categories
-		
-
-		
 
 		/**
 		 * Inserting
