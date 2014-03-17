@@ -166,18 +166,243 @@ public class MainActivity extends Activity {
         // Inserting Bricks
         Log.d("Insert: ", "Inserting Lilla Green...");
         
-        db.createBricks(new Bricks (1, "" , "Green"));	
-
-
+        db.createBricks(new Bricks (111, "Brand" , "8A9B0F"));	
+        db.createBricks(new Bricks (112, "Adgangsforhold" , "8A9B0F"));	
+        db.createBricks(new Bricks (113, "Problemanalyse" , "8A9B0F"));	
+        db.createBricks(new Bricks (114, "Klimateknik" , "8A9B0F"));	
+        db.createBricks(new Bricks (115, "Storspænd" , "8A9B0F"));	
+        db.createBricks(new Bricks (116, "Kuldebro" , "8A9B0F"));	
+        db.createBricks(new Bricks (117, "LCA" , "8A9B0F"));	
+        db.createBricks(new Bricks (118, "Byggesystemer" , "8A9B0F"));	
+        db.createBricks(new Bricks (119, "Handicapforhold" , "8A9B0F"));	
+        db.createBricks(new Bricks (120, "Statisk system" , "8A9B0F"));
+        db.createBricks(new Bricks (121, "Konstruktion" , "8A9B0F"));	
+        db.createBricks(new Bricks (122, "Installationer" , "8A9B0F"));	
+        db.createBricks(new Bricks (123, "Økonomi" , "8A9B0F"));	
+        db.createBricks(new Bricks (124, "Drift" , "8A9B0F"));	
+        db.createBricks(new Bricks (125, "Organisation" , "8A9B0F"));	
+        db.createBricks(new Bricks (126, "BR 15" , "8A9B0F"));	
+        db.createBricks(new Bricks (127, "BR 20" , "8A9B0F"));	
+        db.createBricks(new Bricks (128, "Vugge til vugge" , "8A9B0F"));	
+        db.createBricks(new Bricks (129, "Varmetilskud" , "8A9B0F"));	
+        db.createBricks(new Bricks (130, "Energi" , "8A9B0F"));
+        db.createBricks(new Bricks (131, "Vindmøller" , "8A9B0F"));	
+        db.createBricks(new Bricks (132, "Grøn tag" , "8A9B0F"));	
+        db.createBricks(new Bricks (133, "Ventilation" , "8A9B0F"));	
+        db.createBricks(new Bricks (134, "Plug & play" , "8A9B0F"));	
+        db.createBricks(new Bricks (135, "80/ 20" , "8A9B0F"));	
+        db.createBricks(new Bricks (136, "Kraftforløb" , "8A9B0F"));	
+        db.createBricks(new Bricks (137, "Lean" , "8A9B0F"));	
+        db.createBricks(new Bricks (138, "Mass Customization" , "8A9B0F"));	
+        db.createBricks(new Bricks (139, "Passive virkemidler" , "8A9B0F"));	
+        db.createBricks(new Bricks (140, "Snelast" , "8A9B0F"));
+        db.createBricks(new Bricks (141, "Nyttelast" , "8A9B0F"));	
+        db.createBricks(new Bricks (142, "Egenlast" , "8A9B0F"));	
+        db.createBricks(new Bricks (143, "Rumprogram" , "8A9B0F"));	
+        db.createBricks(new Bricks (144, "Funktionsdiagram" , "8A9B0F"));	
+        db.createBricks(new Bricks (145, "Temperatur" , "8A9B0F"));	
+        db.createBricks(new Bricks (146, "Luftskifte" , "8A9B0F"));	
+        db.createBricks(new Bricks (147, "Naturlig ventilation" , "8A9B0F"));	
+        db.createBricks(new Bricks (148, "Overophedning" , "8A9B0F"));	
+        db.createBricks(new Bricks (149, "U-værdi" , "8A9B0F"));	
+        db.createBricks(new Bricks (150, "Fugt" , "8A9B0F"));
+        db.createBricks(new Bricks (151, "Produktion" , "8A9B0F"));	
+        db.createBricks(new Bricks (152, "Genbrug" , "8A9B0F"));	
+        db.createBricks(new Bricks (153, "Bygningsdesign" , "8A9B0F"));	
+        db.createBricks(new Bricks (154, "3D modellering" , "8A9B0F"));	
+        db.createBricks(new Bricks (155, "BIM" , "8A9B0F"));	
+        db.createBricks(new Bricks (156, "Revit" , "8A9B0F"));	
+        db.createBricks(new Bricks (157, "Adgangsforhold" , "8A9B0F"));	
+        db.createBricks(new Bricks (158, "Regulativer" , "8A9B0F"));	
+        db.createBricks(new Bricks (159, "Forretning" , "8A9B0F"));	
+        db.createBricks(new Bricks (160, "Montage" , "8A9B0F"));
+        db.createBricks(new Bricks (161, "Lovgivning" , "8A9B0F"));	
+        db.createBricks(new Bricks (162, "Naturgas" , "8A9B0F"));	
+        db.createBricks(new Bricks (163, "A kraft" , "8A9B0F"));	
+        db.createBricks(new Bricks (164, "Radiator" , "8A9B0F"));	
+        db.createBricks(new Bricks (165, "Genvækst" , "8A9B0F"));	
+        db.createBricks(new Bricks (166, "Vindenergi" , "8A9B0F"));	
+        db.createBricks(new Bricks (167, "Digital signatur" , "8A9B0F"));	
+        db.createBricks(new Bricks (168, "Konfigurering" , "8A9B0F"));	
+        db.createBricks(new Bricks (169, "Termisk masse" , "8A9B0F"));	
+        db.createBricks(new Bricks (170, "Solfanger" , "8A9B0F"));
+        db.createBricks(new Bricks (171, "Klima" , "8A9B0F"));	
+        db.createBricks(new Bricks (172, "Mekanisk ventilation" , "8A9B0F"));	
+        db.createBricks(new Bricks (173, "Naturlig ventilation" , "8A9B0F"));	
+        db.createBricks(new Bricks (174, "Overophedning" , "8A9B0F"));	
+        db.createBricks(new Bricks (175, "Strålevarme" , "8A9B0F"));	
+        db.createBricks(new Bricks (176, "Afskærmning" , "8A9B0F"));	
+        db.createBricks(new Bricks (177, "Levedygtig" , "8A9B0F"));	
+        db.createBricks(new Bricks (178, "Økonomi" , "8A9B0F"));	
+        db.createBricks(new Bricks (179, "Lokal energi" , "8A9B0F"));	
+        db.createBricks(new Bricks (180, "Belysning" , "8A9B0F"));
+        db.createBricks(new Bricks (181, "Levetid" , "8A9B0F"));	
+        db.createBricks(new Bricks (182, "Komfort temperatur" , "8A9B0F"));	
+        db.createBricks(new Bricks (183, "CO2 udledning" , "8A9B0F"));	
+        db.createBricks(new Bricks (184, "Totaløkonomi" , "8A9B0F"));	
+        db.createBricks(new Bricks (185, "Levetidsomkostninger" , "8A9B0F"));	
+        db.createBricks(new Bricks (186, "Totalværdi" , "8A9B0F"));	
+        db.createBricks(new Bricks (187, "Håndtering af brugsvand" , "8A9B0F"));	
+        db.createBricks(new Bricks (188, "Håndtering af spildevand" , "8A9B0F"));	
+        db.createBricks(new Bricks (189, "Håndtering af regnvand" , "8A9B0F"));	
+        
+        
+        
 		 /**
          * Inserting
          * */
         // Inserting Bricks
         Log.d("Insert: ", "Inserting Lilla Yellow...");
         
-        db.createBricks(new Bricks (1, "" , "Yellow"));	
-
+        db.createBricks(new Bricks (190, "+" , "F8CB00"));
+        db.createBricks(new Bricks (191, "-" , "F8CB00"));
+        db.createBricks(new Bricks (192, "=" , "F8CB00"));
+        db.createBricks(new Bricks (193, "?" , "F8CB00"));
+        db.createBricks(new Bricks (194, "+" , "F8CB00"));
+        db.createBricks(new Bricks (195, "Kalk" , "F8CB00"));
+        db.createBricks(new Bricks (196, "Mørtel" , "F8CB00"));
+        db.createBricks(new Bricks (197, "Plastfolie" , "F8CB00"));
+        db.createBricks(new Bricks (198, "Cement" , "F8CB00"));
+        db.createBricks(new Bricks (199, "Sand" , "F8CB00"));
+        db.createBricks(new Bricks (200, "Kork" , "F8CB00"));
+        db.createBricks(new Bricks (201, "Kalksten" , "F8CB00"));
+        db.createBricks(new Bricks (202, "Tapet" , "F8CB00"));
+        db.createBricks(new Bricks (203, "Ler" , "F8CB00"));
+        db.createBricks(new Bricks (204, "Papir" , "F8CB00"));
+        db.createBricks(new Bricks (205, "Marmor" , "F8CB00"));
+        db.createBricks(new Bricks (206, "Vand" , "F8CB00"));
+        db.createBricks(new Bricks (207, "Luft" , "F8CB00"));
+        db.createBricks(new Bricks (208, "Bly" , "F8CB00"));
+        db.createBricks(new Bricks (209, "Stilhed" , "F8CB00"));
+        db.createBricks(new Bricks (210, "Rolig" , "F8CB00"));
+        db.createBricks(new Bricks (211, "Kaotisk" , "F8CB00"));
+        db.createBricks(new Bricks (212, "Symmetri" , "F8CB00"));
+        db.createBricks(new Bricks (213, "Asymmetri" , "F8CB00"));
+        db.createBricks(new Bricks (214, "Flamingo" , "F8CB00"));
         
+        
+        /**
+         * Inserting
+         * */
+        // Inserting Bricks
+        Log.d("Insert: ", "Inserting Lilla Orange...");
+        
+        db.createBricks(new Bricks (215, "Kontor" , "E87F00"));
+        db.createBricks(new Bricks (216, "Atrium" , "E87F00"));
+        db.createBricks(new Bricks (217, "Teknikrum" , "E87F00"));
+        db.createBricks(new Bricks (218, "Værelse" , "E87F00"));
+        db.createBricks(new Bricks (219, "Kælder" , "E87F00"));
+        db.createBricks(new Bricks (220, "Støj" , "E87F00"));
+        db.createBricks(new Bricks (221, "Lejligheder" , "E87F00"));
+        db.createBricks(new Bricks (222, "Terasse" , "E87F00"));
+        db.createBricks(new Bricks (223, "Køkken" , "E87F00"));
+        db.createBricks(new Bricks (224, "Have" , "E87F00"));
+        db.createBricks(new Bricks (225, "Udhus" , "E87F00"));
+        db.createBricks(new Bricks (226, "Depot" , "E87F00"));
+        db.createBricks(new Bricks (227, "Penthouse" , "E87F00"));
+        db.createBricks(new Bricks (228, "Badeværelse" , "E87F00"));
+        db.createBricks(new Bricks (229, "Toilet" , "E87F00"));
+        db.createBricks(new Bricks (230, "Udestue" , "E87F00"));
+        db.createBricks(new Bricks (231, "Garderobe" , "E87F00"));
+        db.createBricks(new Bricks (232, "Bryggers" , "E87F00"));
+        db.createBricks(new Bricks (233, "Forskudte planer" , "E87F00"));
+        db.createBricks(new Bricks (234, "Rammer" , "E87F00"));
+        db.createBricks(new Bricks (235, "Fællesarealer" , "E87F00"));
+        db.createBricks(new Bricks (236, "Opgang" , "E87F00"));
+        db.createBricks(new Bricks (237, "Vindue" , "E87F00"));
+        db.createBricks(new Bricks (238, "Døre" , "E87F00"));
+        db.createBricks(new Bricks (239, "Interiør" , "E87F00"));
+        db.createBricks(new Bricks (240, "Søjler" , "E87F00"));
+        db.createBricks(new Bricks (241, "Gulv" , "E87F00"));
+        db.createBricks(new Bricks (242, "Møbler" , "E87F00"));
+        db.createBricks(new Bricks (243, "Elementer" , "E87F00"));
+        db.createBricks(new Bricks (244, "Facade" , "E87F00"));
+        db.createBricks(new Bricks (245, "Bjælker" , "E87F00"));
+        db.createBricks(new Bricks (246, "Plader" , "E87F00"));
+        db.createBricks(new Bricks (247, "Trappe" , "E87F00"));
+        db.createBricks(new Bricks (248, "Tag" , "E87F00"));
+        db.createBricks(new Bricks (249, "Dæk" , "E87F00"));
+        db.createBricks(new Bricks (250, "Loft" , "E87F00"));
+        db.createBricks(new Bricks (251, "Elevator" , "E87F00"));
+        db.createBricks(new Bricks (252, "Gang" , "E87F00"));
+        db.createBricks(new Bricks (253, "Overnlysvindue" , "E87F00"));
+        db.createBricks(new Bricks (254, "Balkon" , "E87F00"));
+        db.createBricks(new Bricks (255, "Affaldsskakt" , "E87F00"));
+        db.createBricks(new Bricks (256, "Vådzoner" , "E87F00"));
+        db.createBricks(new Bricks (257, "Føringsveje" , "E87F00"));
+        db.createBricks(new Bricks (258, "Solpaneler" , "E87F00"));
+        db.createBricks(new Bricks (259, "Væg" , "E87F00"));
+        db.createBricks(new Bricks (260, "Solceller" , "E87F00"));
+        db.createBricks(new Bricks (261, "Grønt tag" , "E87F00"));
+        db.createBricks(new Bricks (262, "Drivhus" , "E87F00"));
+        db.createBricks(new Bricks (263, "Væksthus" , "E87F00"));
+        db.createBricks(new Bricks (264, "Korridor" , "E87F00"));
+        db.createBricks(new Bricks (265, "Hal" , "E87F00"));
+        db.createBricks(new Bricks (266, "Kantine" , "E87F00"));
+        db.createBricks(new Bricks (267, "Garage" , "E87F00"));
+        db.createBricks(new Bricks (268, "Børneværelse" , "E87F00"));
+        db.createBricks(new Bricks (269, "Soveværelse" , "E87F00"));
+        db.createBricks(new Bricks (270, "Walk in" , "E87F00"));
+        db.createBricks(new Bricks (271, "Sauna" , "E87F00"));
+        db.createBricks(new Bricks (272, "Fordelingsareal" , "E87F00"));
+        db.createBricks(new Bricks (273, "Bibliotek" , "E87F00"));
+        db.createBricks(new Bricks (274, "Venterum" , "E87F00"));
+        db.createBricks(new Bricks (275, "Reception" , "E87F00"));
+        db.createBricks(new Bricks (276, "Mødelokaler" , "E87F00"));
+        db.createBricks(new Bricks (277, "Aktivitetsrum" , "E87F00"));
+        db.createBricks(new Bricks (278, "Værksted" , "E87F00"));
+        db.createBricks(new Bricks (279, "Loftrum" , "E87F00"));
+        db.createBricks(new Bricks (280, "Hems" , "E87F00"));
+        db.createBricks(new Bricks (281, "Repos" , "E87F00"));
+        db.createBricks(new Bricks (282, "Skorsten" , "E87F00"));
+        db.createBricks(new Bricks (283, "Tung væg" , "E87F00"));
+        db.createBricks(new Bricks (284, "Let væg" , "E87F00"));
+        db.createBricks(new Bricks (285, "Lager" , "E87F00"));
+        db.createBricks(new Bricks (286, "Redskabsskur" , "E87F00"));
+        db.createBricks(new Bricks (287, "Skur" , "E87F00"));
+        db.createBricks(new Bricks (288, "Hall" , "E87F00"));
+        db.createBricks(new Bricks (289, "Entre" , "E87F00"));
+        db.createBricks(new Bricks (290, "Forgang" , "E87F00"));
+        db.createBricks(new Bricks (291, "Baggang" , "E87F00"));
+        db.createBricks(new Bricks (292, "Gæstetoilet" , "E87F00"));
+        db.createBricks(new Bricks (293, "Ydervæg" , "E87F00"));
+        db.createBricks(new Bricks (294, "Indervæg" , "E87F00"));
+        db.createBricks(new Bricks (295, "Indkørsel" , "E87F00"));
+        db.createBricks(new Bricks (296, "Plads" , "E87F00"));
+        db.createBricks(new Bricks (297, "Fortorv" , "E87F00"));
+        db.createBricks(new Bricks (298, "Torvet" , "E87F00"));
+        db.createBricks(new Bricks (299, "Mursten" , "E87F00"));
+        db.createBricks(new Bricks (300, "Glas" , "E87F00"));
+        db.createBricks(new Bricks (301, "Beton" , "E87F00"));
+        db.createBricks(new Bricks (302, "Eternit" , "E87F00"));
+        db.createBricks(new Bricks (303, "Isolering" , "E87F00"));
+        db.createBricks(new Bricks (304, "Tagpap" , "E87F00"));
+        db.createBricks(new Bricks (305, "Tegl" , "E87F00"));
+        db.createBricks(new Bricks (306, "Jern" , "E87F00"));
+        db.createBricks(new Bricks (307, "Træ" , "E87F00"));
+        db.createBricks(new Bricks (308, "Stål" , "E87F00"));
+        db.createBricks(new Bricks (309, "Kobber" , "E87F00"));
+        db.createBricks(new Bricks (310, "Composit" , "E87F00"));
+        db.createBricks(new Bricks (311, "Glasfiber" , "E87F00"));
+        db.createBricks(new Bricks (312, "Plastik" , "E87F00"));
+        db.createBricks(new Bricks (313, "Bambus" , "E87F00"));
+        db.createBricks(new Bricks (314, "Tekstil" , "E87F00"));
+        db.createBricks(new Bricks (315, "Gummi" , "E87F00"));
+        db.createBricks(new Bricks (316, "Skifer" , "E87F00"));
+        db.createBricks(new Bricks (317, "Zink" , "E87F00"));
+        db.createBricks(new Bricks (318, "Klinker" , "E87F00"));
+        db.createBricks(new Bricks (319, "Linolium" , "E87F00"));
+        db.createBricks(new Bricks (320, "Uld" , "E87F00"));
+        db.createBricks(new Bricks (321, "Granit" , "E87F00"));
+        db.createBricks(new Bricks (322, "Halm" , "E87F00"));
+        db.createBricks(new Bricks (323, "Gips" , "E87F00"));
+        db.createBricks(new Bricks (324, "Jord" , "E87F00"));
+        db.createBricks(new Bricks (325, "Grus" , "E87F00"));
+        db.createBricks(new Bricks (326, "Aluminium" , "E87F00"));
+        db.createBricks(new Bricks (327, "Polystyren" , "E87F00"));
+        db.createBricks(new Bricks (328, "Muslingeskaller" , "E87F00"));
+        db.createBricks(new Bricks (329, "Leganødder" , "E87F00"));
+   
         
 		 /**
          * Inserting
