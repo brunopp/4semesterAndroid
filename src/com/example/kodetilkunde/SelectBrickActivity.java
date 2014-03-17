@@ -20,11 +20,6 @@ public class SelectBrickActivity extends Activity implements OnItemClickListener
 	
 	//fields
 	
-	//sender beskeder videre
-	public final static String EXTRA_ID = "com.example.kodetilkunde.id";
-	public final static String EXTRA_NAME = "com.example.kodetilkunde.name";
-	public final static String EXTRA_COLOUR = "com.example.kodetilkunde.COLOUR";
-	
 	
 	ListView listview;
 	
