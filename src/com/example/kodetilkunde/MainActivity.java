@@ -1,12 +1,10 @@
 package com.example.kodetilkunde;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,7 +17,6 @@ import org.apmem.tools.layouts.*;
 import com.example.model.Bricks;
 import com.example.model.Category;
 import com.example.sqlite.Database;
-import com.example.sqlite.Database.Pair;
 
 public class MainActivity extends Activity {
 
@@ -27,14 +24,20 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
-		updateSelectedBricks();
 	}
 	
+	@Override
+	protected void onResume() {
+		super.onResume();
+		
+		updateSelectedBricks();
+	}
+
 	private void updateSelectedBricks()
 	{
 		// Get the container holding the categories.
 		LinearLayout container = (LinearLayout) findViewById(R.id.layoutContainer);
+		container.removeAllViews();
 
 		Database db = new Database(this);
 
@@ -64,6 +67,8 @@ public class MainActivity extends Activity {
 			// Add the FlowLayout to the container.
 			container.addView(fl);
 		}
+		
+		db.close();
 	}
 
 	@Override
